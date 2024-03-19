@@ -1,0 +1,101 @@
+.navbar {
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  cursor: pointer;
+}
+
+.box {
+  width: 500px;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #eee;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.logo {
+  font-size: 29px;
+  color: rgb(65, 65, 244);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.menu {
+  width: 22px;
+  height: 4px;
+  background-color: black;
+}
+
+.searchBox {
+  border: none;
+  border-radius: 10px;
+  padding: 0 5px;
+  width: 100%;
+  background-color: #eee;
+  outline: none;
+  font-size: 15px;
+}
+
+.navbar__hamburger {
+  display: none;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  padding: 5px 8px;
+}
+
+.login {
+  background-color: aliceblue;
+  color: black;
+}
+
+@media screen and (max-width: 950px) {
+  .box {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .navbar__menu {
+    display: none;
+  }
+
+  .box {
+    width: 350px;
+    padding: 4px 10px;
+  }
+
+  .searchBox {
+    padding: 0 10px;
+  }
+
+  .searchBox::placeholder {
+    font-size: 13px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .navbar__hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+}
